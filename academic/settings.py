@@ -29,6 +29,7 @@ INSTALLED_APPS = [
 
     #global
     'rest_framework',
+    'drf_yasg',
 
     #local
     'journal',

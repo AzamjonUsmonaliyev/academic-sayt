@@ -13,6 +13,9 @@ class Category(models.Model):
     factor = models.FloatField(blank=True,null=True)
     contact = models.URLField()
 
+    def __str__(self):
+        return self.title
+
 class Product(models.Model):
     title = models.CharField(max_length=300)
     author = models.CharField(max_length=250)
@@ -27,3 +30,6 @@ class Product(models.Model):
     section = models.CharField(max_length=50,blank=True,null=True)
     start_page = models.PositiveSmallIntegerField()
     end_page = models.PositiveSmallIntegerField()
+
+    def __str__(self):
+        return self.title
